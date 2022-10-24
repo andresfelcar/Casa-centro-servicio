@@ -39,11 +39,6 @@ $result = $invoice->Invoices(0, $array);
     <div class="container-fluid">
        
         <div>
-            <?php if(!empty($_POST['idInvoice'])){
-                $_SESSION['idInvoice']=$_POST['idInvoice'];
-                header("Location:ViewOneInvoice.php");
-            }?>
-
             <form action="ViewOneInvoice.php" method="POST">
                 <label>Id de Factura</label>
                  <input name="idInvoice">
