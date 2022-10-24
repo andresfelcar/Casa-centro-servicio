@@ -256,15 +256,18 @@ class Invoices_Controller
         $stmt->execute();
     }
     public function ConsultOne($array){
+
+        
         $conexion = Conexion::connection();
+
          if ($array[0] == 1) {
             $conexion = Conexion::connection();
-            $sql = "Select fa.IdFactura,fa.Fecha,cl.Nombre1, fa.Total from facturas fa INNER JOIN clientes cl INNER JOIN usuarios us where fa.Estado != 0 and fa.IdCliente = cl.IdCliente and fa.IdUsuario= us.IdUsuario  AND fa.Fecha = '$array[2]'";
+            $sql = "Select fa.IdFactura,fa.Fecha,cl.Nombre1, fa.Total from facturas fa INNER JOIN clientes cl INNER JOIN usuarios us where fa.Estado != 0 and fa.IdCliente = cl.IdCliente and fa.IdUsuario= us.IdUsuario  AND fa.IdFactura='$array[2]'";
             return $conexion->query($sql);
         }
         if ($array[0] == 2) {
             $conexion = Conexion::connection();
-            $sql = "Select fa.IdFactura,fa.Fecha,cl.Nombre1, fa.Total from facturas fa INNER JOIN clientes cl INNER JOIN usuarios us where fa.IdCliente = cl.IdCliente and fa.IdUsuario= us.IdUsuario AND fa.IdUsuario='$array[1]'  AND fa.Fecha = '$array[2]'";
+            $sql = "Select fa.IdFactura,fa.Fecha,cl.Nombre1, fa.Total from facturas fa INNER JOIN clientes cl INNER JOIN usuarios us where fa.IdCliente = cl.IdCliente and fa.IdUsuario= us.IdUsuario AND fa.IdUsuario='$array[1]'  AND fa.IdFactura='$array[2]'";
             return $conexion->query($sql);
         }
     }

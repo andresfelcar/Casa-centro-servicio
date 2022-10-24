@@ -7,7 +7,7 @@ class Conexion{
     //clave BScRV=GK8>w
 
     public static function connection(){
-        return mysqli_connect("localhost", "u241751678_casacentro", "BScRV=GK8>w", "u241751678_casacentro");
+        return mysqli_connect("localhost", "root", "", "u241751678_casacentros");
     }  
 }
     
