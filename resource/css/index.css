@@ -1,0 +1,22 @@
+.tam-btn{
+    height: 40px;
+    color: white;
+    margin-left: 200px;
+}
+
+.color-f{
+    background: rgb(0, 0, 0);
+}
+
+.border-card{
+    border: 1px solid #e1e4e1;
+}
+.color-l{
+    color: white;
+}
+.color-form{
+    background: #000000;
+}
+.espacios{
+    height:20px;
+}

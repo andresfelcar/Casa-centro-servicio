@@ -1,0 +1,32 @@
+th{
+    background: #000000;
+}
+.letra-blanca{
+    color: white;
+}
+.fondo-amarillo{
+    background: #1592cc;
+}
+.menu-usuario{
+    margin-bottom: -40px;
+    margin-top: 6px;
+}
+
+.seguidor{
+    position: fixed;
+    width: 100%;
+    
+}
+
+.search-box {
+    position: relative;
+    background-color: red;
+}
+
+.search-box .lala {
+    width: 100%;
+    padding: 20px;
+}
+.espacio{
+    height:20px;
+}
