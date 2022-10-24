@@ -30,7 +30,7 @@ $result = $invoice->Invoices(6, $array);
 
 <body>
     <div class="naveg">
-        <h2 id="hh">Facturas</h2>
+        <h2 id="hh">Facturas  <?php echo $_SESSION['idInvoice']?></h2>
     </div>
     <div class="container">
         <div class="marggin">
